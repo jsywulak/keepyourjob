@@ -5,7 +5,7 @@ This repo contains a CloudFormation template that spins up a "Hello, Stelligent!
 
 To run this, you'll need the AWS CLI tools instead and configured. Once that's done, run this command:
 
-    aws cloudformation create-stack --stack-name HelloStelligent-`date +%Y%m%d%H%M%S` --template-body "`cat ebsample.template`"  --disable-rollback  --output json --timeout-in-minutes 60 --region eu-west-1
+    aws cloudformation create-stack --stack-name HelloStelligent-`date +%Y%m%d%H%M%S` --template-body "`cat hellostelligent.template`"  --disable-rollback  --output json --timeout-in-minutes 60 --region eu-west-1
 
 (The region part is important, since Elastic Beanstalk only looks in buckets in the same region, apparently? The application code is stored in EU-West-1.)
 
