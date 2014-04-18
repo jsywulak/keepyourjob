@@ -22,8 +22,12 @@ You'll also need to export your AWS access credentials to environment variables 
     
 (If you're running Windows, savings vars is [handled a little differently.](http://ss64.com/nt/set.html))
 
+Once the CloudFormation stack is complete, you can go to the [Elastic Beanstalk console](https://console.aws.amazon.com/elasticbeanstalk/) and select the "Hello Stelligent" application. At the top of the page it will list a URL that will take you to the "Hello, Stelligent" page.
+
 Once that's done, just run the test script with ruby:
 
     ruby test_environment.rb
 
 If anything goes wrong it'll spit out a stack trace, and if everything works it'll print out OK.
+
+Once you're done looking at the stack and running tests, you can delete the stack from the [AWS CloudFormation console](https://console.aws.amazon.com/cloudformation/). The name of the stack will start with "hellostelligent" follow by a timestamp.
