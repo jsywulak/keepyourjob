@@ -3,11 +3,13 @@ keepyourjob
 
 This repo contains a CloudFormation template that spins up a "Hello, Stelligent!" sample application.
 
-To run this, you'll need the AWS CLI tools instead and configured. Once that's done, run this command:
+To run this, you'll need the [AWS CLI tools installed and configured](https://aws.amazon.com/cli/). Once that's done, run this command:
 
     aws cloudformation create-stack --stack-name HelloStelligent-`date +%Y%m%d%H%M%S` --template-body "`cat hellostelligent.template`"  --disable-rollback  --output json --timeout-in-minutes 60 --region eu-west-1
 
 (The region part is important, since Elastic Beanstalk only looks in buckets in the same region, apparently? The application code is stored in EU-West-1.)
+
+(Also, leave the stack name as-is, the test looks up the CloudFormation stack via the name.)
 
 To run the tests, you need to have Ruby and the AWS SDK Core Gem installed. Instructions for installing Ruby [are here](https://www.ruby-lang.org/en/downloads/). Once that is done, to install the AWS SDK Core Gem, punch in
 
