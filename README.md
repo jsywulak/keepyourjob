@@ -19,6 +19,8 @@ You'll also need to export your AWS access credentials to environment variables 
 
     export AWS_ACCESS_KEY_ID=youraccesskey
     export AWS_SECRET_ACCESS_KEY=yoursecretkey
+    
+(If you're running Windows, savings vars is [handled a little differently.](http://ss64.com/nt/set.html))
 
 Once that's done, just run the test script with ruby:
 
