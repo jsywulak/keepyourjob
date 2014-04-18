@@ -34,7 +34,8 @@ url = "http://#{elb_dns}/"
 
 response = Net::HTTP.get_response(URI.parse(url).host, URI.parse(url).path)
 
-if response.code != "200"     then raise "Non 200 code returned!" end
-if response.body.length == 0  then raise "No data receieved" end
+if response.code != "200"                          then raise "Non 200 code returned!" end
+if response.body.length == 0                       then raise "No data receieved" end
+unless  response.body.include? "Hello, Stelligent" then raise "Page doesn't look right..." end
 
 puts "OK"
