@@ -30,4 +30,4 @@ Once that's done, just run the test script with ruby:
 
 If anything goes wrong it'll spit out a stack trace, and if everything works it'll print out OK.
 
-Once you're done looking at the stack and running tests, you can delete the stack from the [AWS CloudFormation console](https://console.aws.amazon.com/cloudformation/). The name of the stack will start with "hellostelligent" follow by a timestamp.
+Once you're done looking at the stack and running tests, you can delete the stack from the [AWS CloudFormation console](https://console.aws.amazon.com/cloudformation/). The name of the stack will start with "HelloStelligent" follow by a timestamp.
