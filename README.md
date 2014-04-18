@@ -1,4 +1,4 @@
-keepyourjob
+hello, stelligent.
 ===========
 
 This repo contains a CloudFormation template that spins up a "Hello, Stelligent!" sample application.
